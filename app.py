@@ -28,7 +28,7 @@ def recommend(movie):
 st.header('Movie Recommender System')
 
 movies = pkl.load(open('movies.pkl','rb'))
-similarity = pkl.load(open('similarity.pkl','rb'))
+#similarity = pkl.load(open('similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
